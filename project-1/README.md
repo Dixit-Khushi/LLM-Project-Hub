@@ -8,16 +8,17 @@ This project is a simple weather application built using Python. It fetches real
 
 * Sends a request to a weather API using a URL
 * Receives data in JSON format
-* Extracts useful information from the response
+* Converts the raw data into a Python dictionary
+* Extracts useful information like temperature
 * Displays the current temperature of the location
 
 ---
 
 ## How it works
 
-1. A URL is used which contains the API endpoint
+1. A URL is used which contains the API endpoint and API key
 2. A GET request is sent to the API using the `requests` library
-3. The API returns data in raw format (JSON)
+3. The API returns data in JSON format
 4. The JSON data is converted into a Python dictionary
 5. Specific values like temperature are accessed using keys
 
@@ -39,23 +40,36 @@ This project is a simple weather application built using Python. It fetches real
 
 ---
 
+## Project Structure
+
+```id="f6b7nt"
+project-1/
+ ├── app.py
+ ├── README.md
+ └── requirements.txt
+```
+
+---
+
 ## How to run this project
 
-1. Install required library:
+1. Clone the repository
 
-```
-pip install requests
+2. Install required dependencies:
+
+```id="i6n7lo"
+pip install -r requirements.txt
 ```
 
-2. Replace the API key in the code:
+3. Replace the API key in the code:
 
-```
+```id="h4j2ok"
 your_api_key_here
 ```
 
-3. Run the Python file:
+4. Run the Python file:
 
-```
+```id="wd64fi"
 python app.py
 ```
 
@@ -64,7 +78,7 @@ python app.py
 ## Important Note
 
 The API key has been removed from the code for security reasons.
-Please use your own API key to run this project.
+Please use your own API key to run the project.
 
 ---
 
@@ -80,7 +94,6 @@ Please use your own API key to run this project.
 * Take location as user input
 * Show more weather details (humidity, wind, etc.)
 * Add error handling for invalid city names
-* Convert into a simple UI-based app
+* Convert into a simple UI-based application
 
 ---
-
